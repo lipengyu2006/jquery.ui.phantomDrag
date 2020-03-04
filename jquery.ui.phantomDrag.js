@@ -170,6 +170,18 @@
             that.destinationY = Math.max(o.yMin, Math.min(y, o.yMax));
 
             this._startLoopTimer();
+        },
+
+        setxMin: function (val) {
+            this.options.xMin = val;
+        },
+
+        setyMin: function (val) {
+            this.options.yMin = val;
+        },
+
+        setyMax: function (val) {
+            this.options.yMax = val;
         }
     });
 })(jQuery, this, this.document, Math);
